@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        style="@style/MyStyle"
+        android:text="高级工具"
+        />
+	<TextView
+        android:id="@+id/tv_query_phone_address"
+        android:background="@drawable/selector_atool_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="归属地查询"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:textSize="18sp" />
+	<TextView
+        android:id="@+id/tv_sms_backup"
+        android:background="@drawable/selector_atool_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="短信备份"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:textSize="18sp" />
+	<TextView
+        android:id="@+id/tv_commonnumber_query"
+        android:background="@drawable/selector_atool_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="常用号码查询"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:textSize="18sp" />
+	<TextView
+        android:id="@+id/tv_app_lock"
+        android:background="@drawable/selector_atool_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="程序锁"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:textSize="18sp" />
+	<ProgressBar
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:id="@+id/pb_bar"
+	    style="@android:style/Widget.ProgressBar.Horizontal" 
+	    />
+</LinearLayout>

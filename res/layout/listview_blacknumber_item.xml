@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+     >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_phone"
+        android:text="拦截号码"
+        android:textSize="18sp"
+        android:textColor="#000"
+        />
+	 <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mode"
+        android:text="拦截类型"
+        android:layout_below="@id/tv_phone"
+        android:textSize="18sp"
+        android:textColor="#000"
+        />
+	 <ImageView 
+	     android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_delete"
+        android:background="@drawable/selector_blacknumber_delete_btn"
+        android:layout_alignParentRight="true"
+	     />
+</RelativeLayout>

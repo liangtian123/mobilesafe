@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="功能列表" 
+		style="@style/MyStyle"
+        />
+	<!-- 但是这样的话还是不能动的饿， 这个需要有焦点 -->
+	<!--
+	<TextView
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="秋天的风是格外的凄凉，格外的凄凉格外的凄凉格外的凄凉格外的凄凉格外的凄凉格外的凄凉"
+	    android:textColor="#000000"
+	    android:padding="5sp"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+		android:focusable="true"    
+		android:focusableInTouchMode="true"
+		android:marqueeRepeatLimit="marquee_forever"
+	    />
+	  -->
+	<com.google.mobilesafe.view.FocusTextView
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="秋天的风是格外的凄凉，格外的凄凉格外的凄凉格外的凄凉格外的凄凉格外的凄凉格外的凄凉"
+	    android:textSize="15sp"
+	    android:textColor="#000000"
+	    android:padding="5sp"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    >
+	</com.google.mobilesafe.view.FocusTextView>
+	<GridView 
+	    android:layout_height="wrap_content"
+	    android:verticalSpacing="10dp"
+	    android:layout_width="match_parent"
+	    android:id="@+id/gv_home"
+	    android:numColumns="3"
+	    ></GridView>
+</LinearLayout>
